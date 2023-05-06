@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/logo2.jpg" type="image/x-icon">
+    <title>Safeon</title>
+
+    <!-- Fontfamily cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstarp cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- carousel css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font-awesome css cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- scroll animate css cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- our css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body id="about">
+
+    <!-- Navbar starts Here -->
+
+    <header data-aos="fade-down" data-aos-duration="500">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand m-0 p-0 w-25" href="index.html"><img src="assets/img/logo.png" class="site-logo"
+                        alt="logo"></a>
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                    href="#staticBackdrop" role="button" aria-controls="staticBackdrop">
+                    <div class="hamburger">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                </button>
+                <div class="w-md-50 mobile-nav offcanvas offcanvas-start" tabindex="-1" id="staticBackdrop"
+                    aria-labelledby="staticBackdropLabel">
+                    <div class="main-nav">
+                        <ul class="navbar-nav mx-auto justify-content-md-center">
+                            <div class="d-flex align-items-center justify-content-between d-lg-none">
+                                <a class="navbar-brand m-0 p-3" href="index.html"><img src="assets/img/logo.png"
+                                        class="site-logo" alt="logo"></a>
+                                <button class="navbar-toggler shadow-none border-0 btn-close" type="button"
+                                    data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <li class="nav-item nav-line">
+                                <a class="nav-link font-500 px-3" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item nav-line">
+                                <a class="nav-link font-500 px-3 active" href="aboutus.html">About</a>
+                            </li>
+                            <li class="nav-item nav-line">
+                                <a class="nav-link font-500 px-3" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item nav-line">
+                                <a class="nav-link font-500 px-3" href="approach.html">Approach</a>
+                            </li>
+                            <li class="nav-item nav-line position-relative drop-contain">
+                                <a class="nav-link font-500 px-3" href="engineering.html">Engineering<i
+                                        class="fa-solid fa-caret-down ms-2 d-inline" style="color: #262626;"></i></a>
+                                <div class="dropbox">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link p-0 mb-2 mb-md-3 font-500 px-3 primary-text text-capitalize"
+                                                href="#evacuationmodelling" data-bs-toggle="offcanvas">evacuation
+                                                modelling</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link p-0 mb-2 mb-md-3 font-500 px-3 primary-text text-capitalize"
+                                                href="#smokemodelling" data-bs-toggle="offcanvas">smoke modelling</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link p-0 mb-2 mb-md-3 font-500 px-3 primary-text text-capitalize"
+                                                href="#sprinklersystem" data-bs-toggle="offcanvas">sprinkler system
+                                                design</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link p-0 mb-2 mb-md-3 font-500 px-3 primary-text text-capitalize"
+                                                href="#firealarm" data-bs-toggle="offcanvas">fire alarm system
+                                                design</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link p-0 mb-2 mb-md-3 font-500 px-3 primary-text text-capitalize"
+                                                href="#firesafety" data-bs-toggle="offcanvas">fire safety
+                                                engineering</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link p-0 mb-2 mb-md-3 font-500 px-3 primary-text text-capitalize"
+                                                href="#pressrisation" data-bs-toggle="offcanvas">pressurisation system
+                                                design</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link p-0 mb-2 mb-md-3 font-500 px-3 primary-text text-capitalize"
+                                                href="#firesuppression" data-bs-toggle="offcanvas">fire suppression
+                                                systems</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link p-0 mb-2 mb-md-3 font-500 px-3 primary-text text-capitalize"
+                                                href="#firestategies" data-bs-toggle="offcanvas">fire strategies</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link p-0 mb-0 font-500 px-3 mb-0 primary-text text-capitalize"
+                                                href="#strecturalfire" data-bs-toggle="offcanvas">structural fire
+                                                engineering</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="d-lg-none ">
+                            <a class="primary-btn font-500" href="contactus.html">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-25 d-none d-lg-block">
+                    <a class="primary-btn font-500  ms-auto" href="contactus.html">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Navbar Ends Here -->
+
+    <section class="hero-banner position-relative primary-mb">
+        <div class="container text-center overflow-visible">
+            <div class="hero-vector">
+                <img src="assets/img/flyingvector/holed-cube.png" data-aos="zoom-in" data-aos-duration="600" alt="">
+            </div>
+            <div class="hero-vector vector-1">
+                <img src="assets/img/flyingvector/shuriken.png" data-aos="zoom-in" data-aos-duration="600" alt="">
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-8">
+                    <h1 class="primary-header text-uppercase" data-aos="fade-up" data-aos-duration="600">GET IN know
+                        WITH US</h1>
+                    <p class="primary-text light-color" data-aos="fade-up" data-aos-duration="700">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis cupiditate, eos quidem,
+                        ab in quasi vel, doloribus aperiam ea dolorum rerum fugiat laudantium ducimus quibusdam eius
+                        nulla. Illo, laudantium repellendus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="primary-mb">
+        <div class="container overflow-visible">
+            <div class="row g-5 align-items-center justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div data-aos="fade-up" data-aos-duration="600">
+                        <h1 class="secondary-header text-center">Profile</h1>
+                        <p class="secondary-text text-center">Safeon creates and maintains cost-effective solutions.
+                        </p>
+                        <button class="secondary-btn mx-auto px-4 py-3" data-bs-toggle="offcanvas"
+                            data-bs-target="#staticBackdrop1" aria-controls="staticBackdrop">Read More</button>
+                        <div class="about-vector">
+                            <img src="assets/img/about/profile.png" alt="profile">
+                        </div>
+                    </div>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="staticBackdrop1"
+                        aria-labelledby="staticBackdropLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title blue-color" id="staticBackdropLabel">Profile</h5>
+                            <button type="button" class="btn-close shadow-none border-0" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <p class="primary-text tick-vector d-flex">Ahmed Said Engineering Consultancy (Safeon) is
+                                the professional global consultancy service provider of technical information &
+                                engineering services Including Fire Risk Assessment, Fire Management, Fire Engineering
+                                consultancy
+                                and HAZOP. Our experienced & trained consultants are there to give you ultimate peace of
+                                mind that your business or project complies with current legislation including the
+                                Regulatory Reform (Fire Safety) and the Building
+                                Regulations. Using advanced technology and an experienced staff, Safeon creates and
+                                maintains cost-effective solutions.</p>
+                            <p class="primary-text tick-vector d-flex">Our portfolio of services also encompasses to
+                                help your company develop complex mechanical designs and products, reduce
+                                time-to-market, and penetrate existing and emerging markets. Our services include
+                                product design, analysis,
+                                prototyping & testing, Structural & construction engineering, field failure
+                                investigations (root cause analysis) and solutions, and custom design tool development.
+                                We use tools such as Finite Element Analysis from Ansys
+                                and Abacus, Computational Fluid Dynamics (CFD) from CFX, CAD tools such as Unigraphics,
+                                SolidWorks, Catia and Pro/E.
+                            </p>
+                            <p class="primary-text tick-vector d-flex">
+                                We pride ourselves on our ‘smart’ approach to delivering projects. In everything we do,
+                                we work to ensure our clients obtain the optimal outcome possible.
+                            </p>
+                            <p class="primary-text tick-vector d-flex">
+                                A dedication to technically challenging and practical solutions is central to Safeon’s
+                                client service approach. Clients value our ability to understand and satisfy the needs
+                                of all project stakeholders including government agencies and local authorities,
+                                project owners and the community.
+                            </p>
+                            <p class="primary-text tick-vector d-flex">
+                                Safeon’s team is committed to delivering tangible outcomes which add value to
+                                infrastructure and urban development projects throughout Oman.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class=" d-flex flex-column flex-lg-column-reverse" data-aos="fade-down"
+                        data-aos-duration="700">
+                        <div>
+                            <h1 class="secondary-header text-center">Goal</h1>
+                            <p class="secondary-text text-center">Our goal is to provide safe buildings without
+                                compromising the design vision.</p>
+                            <button class="secondary-btn mx-auto px-4 py-3" data-bs-toggle="offcanvas"
+                                data-bs-target="#staticBackdrop2" aria-controls="staticBackdrop">Read More</button>
+                        </div>
+                        <div class="about-vector">
+                            <img src="assets/img/about/goal.png" alt="profile">
+                        </div>
+                    </div>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="staticBackdrop2"
+                        aria-labelledby="staticBackdropLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title blue-color" id="staticBackdropLabel">Goal</h5>
+                            <button type="button" class="btn-close shadow-none border-0" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <p class="primary-text tick-vector d-flex">Our goal is to provide safe buildings without
+                                compromising the design vision.</p>
+                            <p class="primary-text tick-vector d-flex">As a specialist fire engineering consultancy,
+                                fire engineering is what we do, not just something we do. Our solutions are design
+                                focused and respond to the architecture.</p>
+                            <p class="primary-text tick-vector d-flex">We were the fire consultant on many of the
+                                largest and most complex construction projects in Sultanate of Oman in recent years,
+                                including National Gas Plant-Sohar, Ferro Alloy plant-Sohar FZC, Warehouse – Salalah
+                                FZC, Muscat
+                                Airport MC13 & Muscat downtown Mall</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div data-aos="fade-up" data-aos-duration="600">
+                        <h1 class="secondary-header text-center">Mission and Vision</h1>
+                        <p class="secondary-text text-center">We exhibit the highest standards of integrity, Commitment,
+                            Excellence & Teamwork.</p>
+                        <button class="secondary-btn mx-auto px-4 py-3" data-bs-toggle="offcanvas"
+                            data-bs-target="#staticBackdrop3" aria-controls="staticBackdrop">Read More</button>
+                        <div class="about-vector">
+                            <img src="assets/img/about/mission&vission.png" alt="mission">
+                        </div>
+                    </div>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="staticBackdrop3"
+                        aria-labelledby="staticBackdropLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title blue-color" id="staticBackdropLabel">Mission and Vision</h5>
+                            <button type="button" class="btn-close shadow-none border-0" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <p class="primary-text tick-vector d-flex">Ahmed Said Engineering Consultancy is a team with
+                                a commitment to excellent service & with highly motivated individuals dedicated to
+                                devise & implement protection of the public health, safety and welfare.</p>
+                            <p class="primary-text tick-vector d-flex">We exhibit the highest standards of integrity,
+                                Commitment, Excellence & Teamwork. Our strong point is generated from our clients, our
+                                people, our industry and our community.</p>
+                            <p class="primary-text tick-vector d-flex">We are dedicated to grant our clients with
+                                unsurpassed service and reliability. To enhance safety awareness and endow with special
+                                expertise in safety analysis & accident prevention.</p>
+                            <p class="primary-text tick-vector d-flex">We ensure to offer life safety and asset
+                                protection, provide technically sound & cost effective fire safety solutions based on
+                                the national and international codes & standard.</p>
+                            <p class="primary-text tick-vector d-flex">To support the authorities in their efforts to
+                                maintain professional development in the field of fire safety engineering to the benefit
+                                of life safety and business continuity in the Sultanate of Oman</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="primary-mb">
+        <div class="container">
+            <h1 class="big-header text-center red-color mb-5" data-aos="fade-up" data-aos-duration="600">Code of conduct
+            </h1>
+            <div class="">
+                <div class="g-md-5 row align-items-center justify-content-center mb-5 mb-xl-0">
+                    <div class="col-md-6 p-xl-0">
+                        <div class="bg-height mb-3 mb-md-0" data-aos="zoom-in" data-aos-duration="600">
+                            <img src="assets/img/about/integrity.jpg" alt="fireman">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="primary-header blue-color text-uppercase mb-0" data-aos="fade-up"
+                            data-aos-duration="600">integrity</h1>
+                        <h1 class="tertary-header mb-4" data-aos="fade-up" data-aos-duration="500">The Power of Honesty
+                        </h1>
+                        <p class="tick-vector2" data-aos="fade-up" data-aos-duration="600">Act honestly and with
+                            integrity
+                        </p>
+                        <p class="tick-vector2" data-aos="fade-up" data-aos-duration="700">Avoid and manage conflicts
+                            and potential conflicts of interest</p>
+                        <p class="tick-vector2" data-aos="fade-up" data-aos-duration="800">Compete fairly</p>
+                        <p class="tick-vector2" data-aos="fade-up" data-aos-duration="900">Ensure accuracy and
+                            completeness of financial reports and accounting records
+                        </p>
+                        <p class="tick-vector2" data-aos="fade-up" data-aos-duration="900">Communicate openly, honestly,
+                            and fairly</p>
+                        <p class="tick-vector2" data-aos="fade-up" data-aos-duration="900">Handle “inside information”
+                            appropriately and lawfully</p>
+                        <p class="tick-vector2 mb-0" data-aos="fade-up" data-aos-duration="900">Refuse to make improper
+                            payments
+                        </p>
+                    </div>
+                </div>
+                <div class="row g-md-5 flex-md-row-reverse align-items-center mb-5 mb-xl-0">
+                    <div class="col-md-6 p-xl-0">
+                        <div class="bg-height mb-3 mb-md-0" data-aos="zoom-in" data-aos-duration="600">
+                            <img src="assets/img/about/commit.jpg" alt="fireman">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="primary-header blue-color text-uppercase mb-0" data-aos="fade-up"
+                            data-aos-duration="500">commitment</h1>
+                        <h1 class="tertary-header mb-4" data-aos="fade-up" data-aos-duration="600">The Power of
+                            Responsibility
+                        </h1>
+                        <p class="tick-vector2" data-aos="fade-up" data-aos-duration="700">Protect the health and safety
+                            of others and ourselves</p>
+                        <p class="tick-vector2" data-aos="fade-up" data-aos-duration="800">Support environmental
+                            responsibility through sustainable development
+                        </p>
+                        <p class="tick-vector2" data-aos="fade-up" data-aos-duration="800">Take personal responsibility
+                        </p>
+                        <p class="tick-vector2 mb-0" data-aos="fade-up" data-aos-duration="900">Protect hard assets,
+                            brands, and other intellectual property</p>
+                    </div>
+                </div>
+                <div class="row g-md-5 align-items-center mb-5 mb-xl-0">
+                    <div class="col-md-6 p-xl-0">
+                        <div class="bg-height mb-3 mb-md-0" data-aos="zoom-in" data-aos-duration="600">
+                            <img src="assets/img/about/excel.jpg" alt="fireman">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="primary-header blue-color text-uppercase mb-0" data-aos="fade-up"
+                            data-aos-duration="500">Excellence</h1>
+                        <h1 class="tertary-header mb-4" data-aos="fade-up" data-aos-duration="600">Accept nothing but
+                            the best quality in products and services
+                        </h1>
+                        <p class="tick-vector2" data-aos="fade-up" data-aos-duration="700">Focus on delivering the
+                            highest value to customers, always with a sense of urgency</p>
+                        <p class="tick-vector2" data-aos="fade-up" data-aos-duration="800">Establish a work environment
+                            that supports excellence</p>
+                        <p class="tick-vector2" data-aos="fade-up" data-aos-duration="800">Compete fairly</p>
+                        <p class="tick-vector2" data-aos="fade-up" data-aos-duration="900">Select, place, and evaluate
+                            employees based on qualifications and performance
+                        </p>
+                        <p class="tick-vector2 mb-0" data-aos="fade-up" data-aos-duration="900">Provide employees with
+                            opportunities to develop</p>
+                    </div>
+                </div>
+                <div class="row g-md-5 flex-md-row-reverse align-items-center mb-5">
+                    <div class="col-md-6 p-xl-0">
+                        <div class="bg-height mb-3 mb-md-0" data-aos="zoom-in" data-aos-duration="600">
+                            <img src="assets/img/about/Team work.jpg" alt="fireman">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="primary-header blue-color text-uppercase mb-0" data-aos="fade-up"
+                            data-aos-duration="500">Team work</h1>
+                        <h1 class="tertary-header mb-4" data-aos="fade-up" data-aos-duration="600">The Power of Working
+                            Together</h1>
+                        <p class="tick-vector2" data-aos="fade-up" data-aos-duration="700">Treat others with respect and
+                            do not tolerate intimidation or harassment
+                        </p>
+                        <p class="tick-vector2" data-aos="fade-up" data-aos-duration="800">Treat people fairly and
+                            prohibit discrimination</p>
+                        <p class="tick-vector2" data-aos="fade-up" data-aos-duration="800">Foster an inclusive
+                            environment
+                        </p>
+                        <p class="tick-vector2" data-aos="fade-up" data-aos-duration="800">Conduct business worldwide
+                            with consistent global standards</p>
+                        <p class="tick-vector2" data-aos="fade-up" data-aos-duration="800">Collaborate with key entities
+                            and organizations outside the company
+                        </p>
+                        <p class="tick-vector2 mb-0" data-aos="fade-up" data-aos-duration="900">Build outstanding
+                            relationships with dealers and distribution channel members
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-5">
+        <div class="container position-relative pb-5">
+            <div class="flyingvector vector-1" data-aos="zoom-in" data-aos-duration="600">
+                <img src="assets/img/flyingvector/heart.png" alt="heart">
+            </div>
+            <div class="flyingvector vector-2" data-aos="zoom-in" data-aos-duration="600">
+                <img src="assets/img/flyingvector/like.png" alt="like">
+            </div>
+            <div class="container">
+                <div class="ceo-img-holder mb-5">
+                    <img class="rounded-circle ceo-img"
+                        src="https://media.istockphoto.com/id/1299077558/photo/lead-yourself-to-a-life-of-success.jpg?s=612x612&w=0&k=20&c=OQZPSnM1Eq-4Xx8bxJE8KQ5olJFfRw_YMc29aQ0Au6U="
+                        alt="ceo-img" data-aos="flip-left" data-aos-duration="900" data-aos-easing="ease-out-cubic">
+                </div>
+                <h1 class="big-header text-uppercase font-700 blue-color mb-3 text-center" data-aos="fade-up"
+                    data-aos-duration="600">Ceo of our safeon</h1>
+                <p class="secondary-text text-center" data-aos="fade-up" data-aos-duration="800">Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Saepe, necessitatibus! Saepe inventore esse iste vero sapiente,
+                    debitis facere ab praesentium reiciendis molestiae nam. Blanditiis nam voluptatibus reiciendis quia
+                    aut ex!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="bg-blue teams d-none">
+        <div class="container position-relative overflow-hidden">
+            <h1 class="color-white big-header text-center mb-md-5" data-aos="fade-up" data-aos-duration="600">Our Teams
+            </h1>
+            <div class="slider overflow-hidden row" data-aos="flip-left" data-aos-duration="600">
+                <div class=" col-md-6 col-lg-12 mb-3 ">
+                    <div class="card">
+                        <img src="https://cdn.pixabay.com/photo/2017/11/02/14/25/model-2911325__340.jpg" class="card-img-top" alt="team images">
+                        <div class="card-body text-center">
+                            <h5 class="card-title secondary-header color-white line-1 mb-0">Haisa</h5>
+                            <p class="primary-text color-white">Senior Dev</p>
+                            <p class="card-text text-left text-white secondary-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-6 col-lg-12 mb-3 ">
+                    <div class="card">
+                        <img src="https://cdn.pixabay.com/photo/2015/03/11/09/35/african-668398__340.jpg" class="card-img-top" alt="team images">
+                        <div class="card-body text-center">
+                            <h5 class="card-title secondary-header color-white line-1 mb-0">Haisa</h5>
+                            <p class="primary-text color-white">Senior Dev</p>
+                            <p class="card-text text-white secondary-text text-left">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+    <section class="teams-2">
+        <div class="container overflow-visible">
+            <h1 class="primary-header color-white text-center mb-3" data-aos="fade-up" data-aos-duration="600">Our Teams
+            </h1>
+            <div id="carouselExampleIndicators" class="carousel slide col-lg-12 col-xl-9 mx-auto position-relative"
+                data-aos="zoom-in" data-aos-duration="600">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row g-2">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card">
+                                    <img src="https://cdn.pixabay.com/photo/2017/11/02/14/25/model-2911325__340.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title secondary-header line-1 mb-0">Haisa</h5>
+                                        <p class="primary-text red-color">Senior Dev</p>
+                                        <p class="card-text text-left secondary-text">Some quick example text to build
+                                            on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 d-none d-md-block">
+                                <div class="card">
+                                    <img src="https://cdn.pixabay.com/photo/2015/03/11/09/35/african-668398__340.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title secondary-header line-1 mb-0">Haisa</h5>
+                                        <p class="primary-text red-color">Senior Dev</p>
+                                        <p class="card-text text-left secondary-text">Some quick example text to build
+                                            on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 d-none d-lg-block">
+                                <div class="card">
+                                    <img src="https://cdn.pixabay.com/photo/2017/11/02/14/25/model-2911325__340.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title secondary-header line-1 mb-0">Haisa</h5>
+                                        <p class="primary-text red-color">Senior Dev</p>
+                                        <p class="card-text text-left secondary-text">Some quick example text to build
+                                            on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-2">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card">
+                                    <img src="https://cdn.pixabay.com/photo/2015/03/11/09/35/african-668398__340.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title secondary-header line-1 mb-0">Haisa</h5>
+                                        <p class="primary-text red-color">Senior Dev</p>
+                                        <p class="card-text text-left secondary-text">Some quick example text to build
+                                            on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 d-none d-md-block">
+                                <div class="card">
+                                    <img src="https://cdn.pixabay.com/photo/2017/11/02/14/25/model-2911325__340.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title secondary-header line-1 mb-0">Haisa</h5>
+                                        <p class="primary-text red-color">Senior Dev</p>
+                                        <p class="card-text text-left secondary-text">Some quick example text to build
+                                            on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 d-none d-lg-block">
+                                <div class="card">
+                                    <img src="https://cdn.pixabay.com/photo/2017/11/02/14/25/model-2911325__340.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title secondary-header line-1 mb-0">Haisa</h5>
+                                        <p class="primary-text red-color">Senior Dev</p>
+                                        <p class="card-text text-left secondary-text">Some quick example text to build
+                                            on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-2">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card">
+                                    <img src="https://cdn.pixabay.com/photo/2017/11/02/14/25/model-2911325__340.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title secondary-header line-1 mb-0">Haisa</h5>
+                                        <p class="primary-text red-color">Senior Dev</p>
+                                        <p class="card-text text-left secondary-text">Some quick example text to build
+                                            on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 d-none d-md-block">
+                                <div class="card">
+                                    <img src="https://cdn.pixabay.com/photo/2015/03/11/09/35/african-668398__340.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title secondary-header line-1 mb-0">Haisa</h5>
+                                        <p class="primary-text red-color">Senior Dev</p>
+                                        <p class="card-text text-left secondary-text">Some quick example text to build
+                                            on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 d-none d-lg-block">
+                                <div class="card">
+                                    <img src="https://cdn.pixabay.com/photo/2017/11/02/14/25/model-2911325__340.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title secondary-header line-1 mb-0">Haisa</h5>
+                                        <p class="primary-text red-color">Senior Dev</p>
+                                        <p class="card-text text-left secondary-text">Some quick example text to build
+                                            on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators d-none d-md-flex">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <i class="fa-solid fa-angle-left color-white"></i>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <i class="fa-solid fa-angle-right color-white"></i>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer Starts Here -->
+
+    <footer class="bg-primary2">
+        <div class="container">
+            <div class="row g-5 justify-content-between">
+                <div class="col-12">
+                    <a class="navbar-brand m-0  p-0" href="index.html"><img src="assets/img/logo.png" class="site-logo"
+                            alt="logo" data-aos="fade-up" data-aos-duration="600"></a>
+                </div>
+                <div class="col-lg-4 text-start">
+                    <p class="primary-text color-white mb-0" data-aos="fade-up" data-aos-duration="600">
+                        Ahmed Said Engineering Consultancy (Safeon) is the professional global consultancy service
+                        provider of technical information & engineering services Including Fire Risk Assessment, Fire
+                        Management, Fire Engineering consultancy and HAZOP.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-end" data-aos="fade-up" data-aos-duration="600">
+                    <ul class="navbar-nav flex-column">
+                        <li class="nav-item text-end mx-auto">
+                            <a href="https://goo.gl/maps/QWKMDqNYR3PRLeGv5"
+                                class="nav-link primary-text mb-2 p-0 color-white">
+                                <span class="footer-icon">
+                                    <i class="fa-solid fa-location-dot me-2 light-color"></i>
+                                </span>Safeon Building No.:4657B, Way No:3767, Al Mazoun St, Al Khoud, Sultanate of Oman
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link primary-text mb-2 p-0 color-white" href="tel:+968 2455 3571">
+                                <span class="footer-icon">
+                                    <i class="fa-solid fa-phone-volume me-2 light-color"></i>
+                                </span> +968 2455 3571</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link primary-text mb-0 p-0 color-white" href="mailto: info@safeonfec.com">
+                                <span class="footer-icon">
+                                    <i class="fa-solid fa-envelope me-2 light-color"></i>
+                                </span> info@safeonfec.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-bottom border-dark border-3 my-5" data-aos="fade-left" data-aos-duration="600"></div>
+            <div class="row g-5 justify-content-evenly">
+                <div class="col-12 d-flex justify-content-between">
+                    <ul class="nav col-xl-6 mx-auto justify-content-evenly justify-content-md-between">
+                        <li class="nav-item" data-aos="fade-up" data-aos-duration="500">
+                            <a href="index.html" class="nav-link mb-2 mb-md-0 py-0 text-uppercase color-white">Home</a>
+                        </li>
+                        <li class="nav-item" data-aos="fade-up" data-aos-duration="600">
+                            <a href="aboutus.html" class="nav-link py-0 text-uppercase color-white">about</a>
+                        </li>
+                        <li class="nav-item" data-aos="fade-up" data-aos-duration="700">
+                            <a href="services.html" class="nav-link py-0 text-uppercase color-white">services</a>
+                        </li>
+                        <li class="nav-item" data-aos="fade-up" data-aos-duration="800">
+                            <a href="engineering.html" class="nav-link py-0 text-uppercase color-white">Engineering</a>
+                        </li>
+                        <li class="nav-item" data-aos="fade-up" data-aos-duration="900">
+                            <a href="approach.html" class="nav-link py-0 text-uppercase color-white">approach</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 text-center">
+                    <div class="d-flex justify-content-center">
+                        <a class="nav-link primary-text mb-0 mx-1 color-white footer-link" target="_blank"
+                            href="https://www.linkedin.com/in/asecfire/"><i
+                                class="fa-brands fa-linkedin-in color-white"></i>
+                        </a>
+                        <a class="nav-link primary-text mb-0 mx-1 color-white footer-link" target="_blank"
+                            href="https://www.facebook.com/ASEC-1947396328821295/"><i
+                                class="fa-brands fa-facebook-f color-white"></i>
+                        </a>
+                        <a class="nav-link primary-text mb-0 mx-1 color-white footer-link" target="_blank"
+                            href="https://twitter.com/asec_fire"><i class="fa-brands fa-twitter color-white"></i>
+                        </a>
+                        <a class="nav-link primary-text mb-0 mx-1 color-white footer-link" target="_blank"
+                            href="https://plus.google.com/u/0/106652385634310929480"><i
+                                class="fa-brands fa-google-plus-g color-white"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <p class="primary-text light-color mb-0">Terms & Constions &nbsp; Privacy Policy </p>
+                    <p class="primary-text light-color mb-0">Copyright © 2023 - Safeon | All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+     <!-- footer Ends Here -->
+
+     <div id="canvascontent">
+    </div>
+
+    <!-- Bootstarp cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- owl carousel CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- scrolling animation cdn -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    
+    <!-- canvas script -->
+    <script src="assets/script/offcanvascontent.js"></script>
+
+    <script src="assets/script/slidercontent.js"></script>
+
+    <!-- our script -->
+    <script src="assets/script/script.js"></script>
+
+</body>
+
+</html>

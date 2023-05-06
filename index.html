@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/logo2.jpg" type="image/x-icon">
+    <title>Safeon</title>
+
+    <!-- Fontfamily cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstarp cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- carousel css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <!-- font-awesome css cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <!-- scroll animate css cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- our css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body id="home">
+
+    <!-- Navbar starts Here -->
+
+    <header data-aos="fade-down" data-aos-duration="500">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand m-0 p-0 w-25" href="index.html"><img src="assets/img/logo.png" class="site-logo" alt="logo"></a>
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" href="#staticBackdrop" role="button" aria-controls="staticBackdrop">
+                    <div class="hamburger">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                </button>
+                <div class="w-md-50 mobile-nav offcanvas offcanvas-start" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                    <div class="main-nav">
+                        <ul class="navbar-nav mx-auto justify-content-md-center">
+                            <div class="d-flex align-items-center justify-content-between d-lg-none">
+                                <a class="navbar-brand m-0 p-3" href="index.html"><img src="assets/img/logo.png" class="site-logo" alt="logo"></a>
+                                <button class="navbar-toggler shadow-none border-0 btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <li class="nav-item nav-line">
+                                <a class="nav-link font-500 px-3 active" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item nav-line">
+                                <a class="nav-link font-500 px-3" href="aboutus.html">About</a>
+                            </li>
+                            <li class="nav-item nav-line">
+                                <a class="nav-link font-500 px-3" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item nav-line">
+                                <a class="nav-link font-500 px-3" href="approach.html">Approach</a>
+                            </li>
+                            <li class="nav-item nav-line position-relative drop-contain">
+                                <a class="nav-link font-500 px-3" href="engineering.html">Engineering<i
+                                        class="fa-solid fa-caret-down ms-2 d-inline" style="color: #262626;"></i></a>
+                                <div class="dropbox">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link p-0 mb-2 mb-md-3 font-500 px-3 primary-text text-capitalize" href="#evacuationmodelling" data-bs-toggle="offcanvas">evacuation
+                                                modelling</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link p-0 mb-2 mb-md-3 font-500 px-3 primary-text text-capitalize" href="#smokemodelling" data-bs-toggle="offcanvas">smoke modelling</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link p-0 mb-2 mb-md-3 font-500 px-3 primary-text text-capitalize" href="#sprinklersystem" data-bs-toggle="offcanvas">sprinkler system
+                                                design</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link p-0 mb-2 mb-md-3 font-500 px-3 primary-text text-capitalize" href="#firealarm" data-bs-toggle="offcanvas">fire alarm system
+                                                design</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link p-0 mb-2 mb-md-3 font-500 px-3 primary-text text-capitalize" href="#firesafety" data-bs-toggle="offcanvas">fire safety
+                                                engineering</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link p-0 mb-2 mb-md-3 font-500 px-3 primary-text text-capitalize" href="#pressrisation" data-bs-toggle="offcanvas">pressurisation system
+                                                design</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link p-0 mb-2 mb-md-3 font-500 px-3 primary-text text-capitalize" href="#firesuppression" data-bs-toggle="offcanvas">fire suppression
+                                                systems</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link p-0 mb-2 mb-md-3 font-500 px-3 primary-text text-capitalize" href="#firestategies" data-bs-toggle="offcanvas">fire strategies</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link p-0 mb-0 font-500 px-3 mb-0 primary-text text-capitalize" href="#strecturalfire" data-bs-toggle="offcanvas">structural fire
+                                                engineering</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="d-lg-none ">
+                            <a class="primary-btn font-500" href="contactus.html">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-25 d-none d-lg-block">
+                    <a class="primary-btn font-500  ms-auto" href="contactus.html">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Navbar Ends Here -->
+
+    <section class="home-hero-banner hero-banner overflow-visible primary-mb">
+        <div class="container">
+            <div class="row align-items-center sliding-content">
+                <div class="col-md-6 order-2 order-md-1" data-aos="fade-up" data-aos-duration="700">
+                    <div class="heroslider heroslider1 border-bottom mb-3">
+                        <div class="heroslider-content active">
+                            <h1 class="big-header text-uppercase blue-color">commitment</h1>
+                            <p class="secondary-text">We Ensure To Offer Life Safety And Asset Protection, Provide Technically Sound & Cost Effective Fire Safety Solutions Based On The National And International Codes & Standard.</p>
+                        </div>
+                        <div class="heroslider-content">
+                            <h1 class="big-header text-uppercase blue-color">Structural Fire Engineering</h1>
+                            <p class="secondary-text">Safeon includes experts in structural fire engineering and have extensive expertise in applying it to a wide range of buildings.</p>
+                        </div>
+                        <div class="heroslider-content">
+                            <h1 class="big-header text-uppercase blue-color">Fire Strategies</h1>
+                            <p class="secondary-text">Safeon's team of fire engineers are experts in the preparation of fire strategy reports for all types of buildings. </p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end mb-3" data-aos="fade-right" data-aos-duration="700">
+                        <div class="prev me-3"><i class="fa-solid fa-arrow-left blue-color"></i></div>
+                        <div class="next"><i class="fa-solid fa-arrow-right blue-color"></i></div>
+                    </div>
+                    <div class="d-flex align-items-center flex-wrap mb-5">
+                        <a class="secondary-btn me-5" href="#getstarted">Get Startred</a>
+                        <a href="mailto:contact@safeon.com" class="link d-flex align-items-center mt-3 mt-lg-0"><i
+                                class="fa-solid fa-envelope blue-color me-2"></i>contact@safeon.com</a>
+                    </div>
+                </div>
+                <div class="col-md-6 order-1 order-md-2">
+                    <div class="heroslider heroslider2" data-aos="zoom-in" data-aos-duration="700">
+                        <div class="heroslider-content active">
+                            <img src="assets/img/engimg/eng8.png" alt="">
+                        </div>
+                        <div class="heroslider-content">
+                            <img src="assets/img/engimg/eng5.png" alt="">
+                        </div>
+                        <div class="heroslider-content">
+                            <img src="assets/img/engimg/eng9.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section>
+                <div class="" data-aos="fade-right" data-aos-duration="700">
+                    <div class="owl-carousel py-5">
+                        <div>
+                            <img src="https://asecfire.com/images/clients/icon01.png" alt="">
+                        </div>
+                        <div>
+                            <img src="https://asecfire.com/images/clients/icon02.png" alt="">
+                        </div>
+                        <div>
+                            <img src="https://asecfire.com/images/clients/icon03.png" alt="">
+                        </div>
+                        <div>
+                            <img src="https://asecfire.com/images/clients/icon04.png" alt="">
+                        </div>
+                        <div>
+                            <img src="https://asecfire.com/images/clients/icon05.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="hoverable-content position-absolute">
+            <div>
+                <div class="width-fitcontent mx-auto" data-aos="fade-up" data-aos-duration="700">
+                    <div class="hero-endbox d-lg-flex align-items-center bg-white py-5 p-lg-5 rounded">
+                        <div class="box1 px-5 mb-3 mb-lg-0">
+                            <h1 class="tertary-header text-capitalize mb-3 mb-md-0 text-center text-md-start">We do work and believe in <br class="d-none d-xl-block"> customer satisfaction</h1>
+                        </div>
+                        <div class="box-2 d-md-flex justify-content-center">
+                            <div class="text-center px-5 mb-3 mb-md-0">
+                                <p class="secondary-header font-500 mb-0">100+</p>
+                                <p class="primary-text light-color mb-0">Retails</p>
+                            </div>
+                            <div class="text-center px-5 mb-3 mb-md-0">
+                                <p class="secondary-header font-500 mb-0">200+</p>
+                                <p class="primary-text light-color mb-0">Industrial</p>
+                            </div>
+                            <div class="text-center px-5 mb-0">
+                                <p class="secondary-header font-500 mb-0">1000+</p>
+                                <p class="primary-text light-color mb-0">Bussiness INfrastucture</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <!-- <section class="primary-mb">
+        <div class="container position-relative">
+            <div class="flyingvector vector-1" data-aos="zoom-in" data-aos-duration="700">
+                <img src="assets/img/flyingvector/heart.png" alt="heart">
+            </div>
+            <div class="flyingvector vector-2" data-aos="zoom-in" data-aos-duration="700">
+                <img src="assets/img/flyingvector/like.png" alt="like">
+            </div>
+            <div class="row align-items-center g-4">
+                <div class="col-md-6" data-aos="zoom-in" data-aos-duration="700">
+                    <img src="assets/img/about/mission&vission.png" style="height: 400px;" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h1 class="primary-header blue-color mb-4" data-aos="fade-up" data-aos-duration="600">Our
+                        Specifications</h1>
+                    <h1 class="tertary-header mb-4" data-aos="fade-up" data-aos-duration="700">
+                        Safeon Fire is one of the leading Fire Safety engineering consultants in Oman, specializing in
+                        different fire engineering and protection services in Oman.
+                    </h1>
+                    <p class="primary-text mb-4" data-aos="fade-up" data-aos-duration="700">
+                        We want to work with you, so contact us to see how we can help you.
+                    </p>
+                    <button class="secondary-btn" data-aos="fade-up" data-aos-duration="700">contact us</button>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="specify-sec primary-mb" id="getstarted">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 col-xl-5 set-height" data-aos="zoom-in" data-aos-duration="700">
+                    <img src="assets/img/bg/specification.jpg" alt="">
+                </div>
+                <div class="col-lg-6 col-xl-7">
+                    <h1 class="specify-header mb-2" data-aos="fade-up" data-aos-duration="500">Our Specifications</h1>
+                    <h1 class="secondary-header blue-color text-uppercase font-700 mb-0" data-aos="fade-up" data-aos-duration="600">We want to work with you</h1>
+                    <div class="col-4 col-xl-3 my-3">
+                        <div class="side-border" data-aos="zoom-in-right" data-aos-duration="500" data-aos-easing="ease-in"></div>
+                    </div>
+                    <p class="secondary-text light-color mb-3" data-aos="fade-up" data-aos-duration="600">
+                        Safeon Fire is one of the leading Fire Safety engineering consultants in Oman, specializing in different fire engineering and protection services in Oman.
+                    </p>
+                    <a href="contactus.html" class="primary-btn" data-aos="fade-up" data-aos-duration="900">Contact Us</a>
+                </div>
+                <div class="col-xl-1 d-none">
+                    <div class="straight-border" data-aos="zoom-in-up" data-aos-duration="600" data-aos-easing="ease-in"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="primary-mb">
+            <div class="container position-relative">
+                <div class="row align-items-center g-5">
+                    <div class="col-md-6" data-aos="zoom-in" data-aos-duration="700">
+                        <div class="video-holer">
+                            <video src="https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcTAF9kStQ8EQyPuXd1WYrlItg5xCNfR69I5Jw" controls width="100%"></video>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="primary-header mb-4 line-1 pe-5 text-capitalize" data-aos="fade-up"
+                            data-aos-duration="600">
+                            Welocome To safeon and Find and more about us
+                        </h1>
+                        <p class="primary-text mb-4" data-aos="fade-up" data-aos-duration="700">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit at autem magnam quasi eaque
+                            pariatur illum sed quidem et adipisci obcaecati eligendi, ducimus impedit porro ea tempore
+                            asperiores, provident deserunt.
+                        </p>
+                        <button class="secondary-btn" data-aos="fade-up" data-aos-duration="700">contact us</button>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+    <section class="primary-mb">
+        <div class="container overflow-visible">
+            <h1 class="big-header text-center mb-3 text-uppercase red-color" data-aos="fade-up" data-aos-duration="700">
+                Our Services
+            </h1>
+            <p class="primary-text text-center mb-5 w-md-50 mx-auto" data-aos="fade-up" data-aos-duration="700">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae iusto inventore reprehenderit molestiae doloribus facilis temporibus sint recusandae assumenda fugiat animi illum dignissimos, suscipit quo necessitatibus iste commodi laboriosam veniam.</p>
+            <div class="row g-5 px-lg-5 align-items-center">
+                <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-duration="500">
+                    <div class="pricing-card card border-1">
+                        <div class="card-body py-5 px-4 px-md-5">
+                            <h1 class="tertary-header font-700 mb-5">
+                                FIRE CONSULTANCY
+                            </h1>
+                            <p class="primary-text light-color mb-3 tick-vector2 d-flex">
+                                Fire Safety Strategies
+                            </p>
+                            <p class="primary-text light-color mb-3 tick-vector2 d-flex">
+                                Fire Engineering Solutions
+                            </p>
+                            <p class="primary-text light-color mb-3 tick-vector2 d-flex">
+                                Fire Protection System Design
+                            </p>
+                            <p class="primary-text light-color mb-3 tick-vector2 d-flex">
+                                Fire Safety Inspections and Auditing
+                            </p>
+                            <p class="primary-text light-color mb-5 tick-vector2 d-flex">
+                                Emergency Response Planning
+                            </p>
+                            <button class="primary-btn mb-0 mx-auto" data-bs-target="#firesafety" data-bs-toggle="offcanvas">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-duration="700">
+                    <div class="pricing-card card border-1">
+                        <div class="card-body py-5 px-4 px-md-5">
+                            <h1 class="tertary-header font-700 mb-5">
+                                STRUCTURAL ANALYSIS
+                            </h1>
+                            <p class="primary-text light-color mb-3 tick-vector2 d-flex">
+                                Product design – CAD / CAM
+                            </p>
+                            <p class="primary-text light-color mb-3 tick-vector2 d-flex">
+                                Stress Analysis – NASTRAN / ANSYS
+                            </p>
+                            <p class="primary-text light-color mb-3 tick-vector2 d-flex">
+                                Structural & construction engineering – AutoCAD / Pro-E
+                            </p>
+                            <p class="primary-text light-color mb-5 tick-vector2 d-flex">
+                                Unigraphics, SolidWorks, Catia
+                            </p>
+                            <button class="primary-btn mb-0 mx-auto" data-bs-target="#strecturalfire" data-bs-toggle="offcanvas">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-duration="900">
+                    <div class="pricing-card card border-1">
+                        <div class="card-body py-5 px-4 px-md-5">
+                            <h1 class="tertary-header text-uppercase font-700 mb-5">
+                                Hydro-Carbon / Piping
+                            </h1>
+                            <p class="primary-text light-color mb-3 tick-vector2 d-flex">
+                                Process plant & skid layouts
+                            </p>
+                            <p class="primary-text light-color mb-3 tick-vector2 d-flex">
+                                Piping flexibility and stress analysis
+                            </p>
+                            <p class="primary-text light-color mb-3 tick-vector2 d-flex">
+                                Pipe support design
+                            </p>
+                            <p class="primary-text light-color mb-3 tick-vector2 d-flex">
+                                3-D modeling and clash detection
+                            </p>
+                            <p class="primary-text light-color mb-5 tick-vector2 d-flex">
+                                Piping isometrics & BOM
+                            </p>
+                            <button class="primary-btn mb-0 mx-auto" data-bs-target="#pressrisation" data-bs-toggle="offcanvas">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="whatwedo primary-mb">
+        <div class="container overflow-hidden overflow-lg-visible">
+            <div class="details-sec position-relative">
+                <h1 class="big-header text-center red-color" data-aos="fade-up" data-aos-duration="600">What We Do</h1>
+                <div class="row align-items-center">
+                    <div class="col-lg-4 left-sec">
+                        <a class="card border-0 mb-5" href="#firesafety" data-bs-toggle="offcanvas" data-aos="fade-left" data-aos-duration="500">
+                            <div class="d-flex align-items-center align-items-center">
+                                <div class="card-icon p-3">
+                                    <img src="assets/img/secure-shield.png" alt="" data-aos="fade-up" data-aos-duration="600">
+                                </div>
+                                <div class="card-body px-2 py-4 pe-3">
+                                    <h5 class="card-title text-capitalize mb-0">fire safety</h5>
+                                </div>
+                            </div>
+                        </a>
+                        <div data-aos="fade-left" data-aos-duration="700">
+                            <a class="card left-go border-0 mb-5" href="#firestategies" data-bs-toggle="offcanvas">
+                                <div class="d-flex align-items-center">
+                                    <div class="card-icon p-3">
+                                        <img src="assets/img/secure-shield.png" alt="">
+                                    </div>
+                                    <div class="card-body px-2 py-4 pe-3">
+                                        <h5 class="card-title text-capitalize mb-0">fire strategies</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-aos="fade-left" data-aos-duration="900">
+                            <a class="card left-go border-0 mb-5" href="#smokemodelling" data-bs-toggle="offcanvas">
+                                <div class="d-flex align-items-center">
+                                    <div class="card-icon p-3">
+                                        <img src="assets/img/secure-shield.png" alt="">
+                                    </div>
+                                    <div class="card-body px-2 py-4 pe-3">
+                                        <h5 class="card-title text-capitalize mb-0">smoke modelling</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <a class="card border-0 mb-5" data-aos="fade-left" data-aos-duration="900" href="#evacuationmodelling" data-bs-toggle="offcanvas">
+                            <div class="d-flex align-items-center">
+                                <div class="card-icon p-3">
+                                    <img src="assets/img/secure-shield.png" alt="">
+                                </div>
+                                <div class="card-body px-2 py-4 pe-3">
+                                    <h5 class="card-title text-capitalize mb-0">evacuation modelling</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                        <div class="bgimage-holder">
+                            <img src="assets/img/sit.png" data-aos="zoom-in" data-aos-duration="500" alt="" class="aos-init aos-animate">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 right-sec">
+                        <a class="card border-0 mb-5" data-aos="fade-right" data-aos-duration="500" href="#strecturalfire" data-bs-toggle="offcanvas">
+                            <div class="d-flex align-items-center">
+                                <div class="card-icon p-3">
+                                    <img src="assets/img/secure-shield.png" alt="">
+                                </div>
+                                <div class="card-body px-2 py-4 pe-3">
+                                    <h5 class="card-title text-capitalize mb-0">structural fire engineering</h5>
+                                </div>
+                            </div>
+                        </a>
+                        <div data-aos="fade-right" data-aos-duration="700">
+                            <a class="card right-go border-0 mb-5" href="#firesuppression" data-bs-toggle="offcanvas">
+                                <div class="d-flex align-items-center">
+                                    <div class="card-icon p-3">
+                                        <img src="assets/img/secure-shield.png" alt="">
+                                    </div>
+                                    <div class="card-body px-2 py-4 pe-3">
+                                        <h5 class="card-title text-capitalize mb-0">fire suppression systems</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-aos="fade-right" data-aos-duration="900">
+                            <a class="card right-go border-0 mb-5" href="#sprinklersystem" data-bs-toggle="offcanvas">
+                                <div class="d-flex align-items-center">
+                                    <div class="card-icon p-3">
+                                        <img src="assets/img/secure-shield.png" alt="">
+                                    </div>
+                                    <div class="card-body px-2 py-4 pe-3">
+                                        <h5 class="card-title text-capitalize mb-0">sprinkler system design</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <a class="card border-0 mb-5" data-aos="fade-right" data-aos-duration="900" href="#firealarm" data-bs-toggle="offcanvas">
+                            <div class="d-flex align-items-center">
+                                <div class="card-icon p-3">
+                                    <img src="assets/img/secure-shield.png" alt="">
+                                </div>
+                                <div class="card-body px-2 py-4 pe-3">
+                                    <h5 class="card-title text-capitalize mb-0">fire alarm system</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 mx-auto">
+                        <a class="card border-0 mb-5" data-aos="fade-up" data-aos-duration="900" href="#pressrisation" data-bs-toggle="offcanvas">
+                            <div class="d-flex align-items-center">
+                                <div class="card-icon p-3">
+                                    <img src="assets/img/secure-shield.png" alt="">
+                                </div>
+                                <div class="card-body px-2 py-4 pe-3">
+                                    <h5 class="card-title text-capitalize mb-0">pressurisation system design</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="primary-mb">
+        <div class="container overflow-visible">
+            <h1 class="big-header text-center mb-3 text-uppercase red-color" data-aos="fade-up" data-aos-duration="700">
+                Inspiration For Your Next Trip
+            </h1>
+            <p class="primary-text text-center mb-5 w-md-50 mx-auto" data-aos="fade-up" data-aos-duration="700">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae iusto inventore reprehenderit molestiae doloribus facilis temporibus sint recusandae assumenda fugiat animi illum dignissimos, suscipit quo necessitatibus iste commodi laboriosam veniam.</p>
+            <div class="row g-4 align-items-center">
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <a class="small-card card text-center" data-aos="flip-left" data-aos-duration="700">
+                        <div class="card-body px-4 d-flex flex-column justify-content-center">
+                            <h1 class="secondary-header blue-color text-uppercase line-1 mb-1">Card</h1>
+                            <p class="primary-text light-color mb-0">Card Para</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <a class="small-card card text-center" data-aos="flip-left" data-aos-duration="700">
+                        <div class="card-body px-4 d-flex flex-column justify-content-center">
+                            <h1 class="secondary-header blue-color text-uppercase line-1 mb-1">Card</h1>
+                            <p class="primary-text light-color mb-0">Card Para</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <a class="small-card card text-center" data-aos="flip-left" data-aos-duration="700">
+                        <div class="card-body px-4 d-flex flex-column justify-content-center">
+                            <h1 class="secondary-header blue-color text-uppercase line-1 mb-1">Card</h1>
+                            <p class="primary-text light-color mb-0">Card Para</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <a class="small-card card text-center" data-aos="flip-left" data-aos-duration="700">
+                        <div class="card-body px-4 d-flex flex-column justify-content-center">
+                            <h1 class="secondary-header blue-color text-uppercase line-1 mb-1">Card</h1>
+                            <p class="primary-text light-color mb-0">Card Para</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <a class="small-card card text-center" data-aos="flip-left" data-aos-duration="700">
+                        <div class="card-body px-4 d-flex flex-column justify-content-center">
+                            <h1 class="secondary-header blue-color text-uppercase line-1 mb-1">Card</h1>
+                            <p class="primary-text light-color mb-0">Card Para</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <a class="small-card card text-center" data-aos="flip-left" data-aos-duration="700">
+                        <div class="card-body px-4 d-flex flex-column justify-content-center">
+                            <h1 class="secondary-header blue-color text-uppercase line-1 mb-1">Card</h1>
+                            <p class="primary-text light-color mb-0">Card Para</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <a class="small-card card text-center" data-aos="flip-left" data-aos-duration="700">
+                        <div class="card-body px-4 d-flex flex-column justify-content-center">
+                            <h1 class="secondary-header blue-color text-uppercase line-1 mb-1">Card</h1>
+                            <p class="primary-text light-color mb-0">Card Para</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <a class="small-card card text-center" data-aos="flip-left" data-aos-duration="700">
+                        <div class="card-body px-4 d-flex flex-column justify-content-center">
+                            <h1 class="secondary-header blue-color text-uppercase line-1 mb-1">Card</h1>
+                            <p class="primary-text light-color mb-0">Card Para</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <a class="small-card card text-center" data-aos="flip-left" data-aos-duration="700">
+                        <div class="card-body px-4 d-flex flex-column justify-content-center">
+                            <h1 class="secondary-header blue-color text-uppercase line-1 mb-1">Card</h1>
+                            <p class="primary-text light-color mb-0">Card Para</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <a class="small-card card text-center" data-aos="flip-left" data-aos-duration="700">
+                        <div class="card-body px-4 d-flex flex-column justify-content-center">
+                            <h1 class="secondary-header blue-color text-uppercase line-1 mb-1">Card</h1>
+                            <p class="primary-text light-color mb-0">Card Para</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <a class="small-card card text-center" data-aos="flip-left" data-aos-duration="700">
+                        <div class="card-body px-4 d-flex flex-column justify-content-center">
+                            <h1 class="secondary-header blue-color text-uppercase line-1 mb-1">Card</h1>
+                            <p class="primary-text light-color mb-0">Card Para</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <a class="small-card card text-center" data-aos="flip-left" data-aos-duration="700">
+                        <div class="card-body px-4 d-flex flex-column justify-content-center">
+                            <p class="link blue-color mb-0 line-1">Show More</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="primary-mb">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="primary-header blue-color text-capitalize mb-4" data-aos="fade-up" data-aos-duration="600">What our <span class="d-inline red-color">client saying</span> <br class="d-none d-md-block d-lg-none d-xl-block"> about us</h1>
+                    <div class="d-flex align-items-center" data-aos="fade-right" data-aos-duration="800">
+                        <div class="img-box" data-bs-target="#carouselExample" data-bs-slide-to="0" aria-label="Slide 1">
+                            <img src="https://images.pexels.com/photos/3768911/pexels-photo-3768911.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                        </div>
+                        <div class="img-box" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2">
+                            <img src="https://images.pexels.com/photos/3808822/pexels-photo-3808822.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                        </div>
+                        <div class="img-box" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3">
+                            <img src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                        </div>
+                        <div class="img-box" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4">
+                            <img src="https://images.pexels.com/photos/8067886/pexels-photo-8067886.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                        </div>
+                        <div class="img-box" data-bs-target="#carouselExample" data-bs-slide-to="4" aria-label="Slide 5">
+                            <img src="https://images.pexels.com/photos/12902932/pexels-photo-12902932.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                        </div>
+                        <div class="img-box d-flex justify-content-center align-items-center bg-blue">
+                            <i class="fa-solid fa-plus color-white"></i>
+                        </div>
+                        <div class="ms-2">
+                            <p class="primary-text light-color mb-0 line-1">+12k followers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div id="carouselExample" class="carousel slide img-box-slider row g-3" data-aos="fade-up" data-aos-duration="700">
+                        <div class="carousel-inner col-12">
+                            <div class="carousel-item active">
+                                <div class="card border-0 img-box-slider-card row flex-row align-items-center">
+                                    <div class="col-12">
+                                        <p class="primary-text light-color mb-5" data-aos="fade-up" data-aos-duration="600">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nobis quaerat exercitationem corporis repudiandae eos quia doloribus dolor. Hic corporis a vel voluptate deleniti esse aut, nostrum labore error ut.
+                                        </p>
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="https://images.pexels.com/photos/3768911/pexels-photo-3768911.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                                    </div>
+                                    <div class="col-7">
+                                        <h1 class="tertary-header">Lucia Kilfona</h1>
+                                        <p class="primary-text mb-0 line-1 text-capitalize">Southern Part , USA</p>
+                                    </div>
+                                    <div class="col-2 d-flex align-items-end" style="height: 100px;">
+                                        <p class="primary-text text-end mb-2">4.2<i class="fa-solid fa-star ms-2" style="color: #dbd41f;"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-12">
+                                    <p class="primary-text light-color mb-5" data-aos="fade-up" data-aos-duration="600">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nobis quaerat exercitationem corporis repudiandae eos quia doloribus dolor. Hic corporis a vel voluptate deleniti esse aut, nostrum labore error ut.
+                                    </p>
+                                </div>
+                                <div class="card border-0 img-box-slider-card row flex-row align-items-center">
+                                    <div class="col-3">
+                                        <img src="https://images.pexels.com/photos/3808822/pexels-photo-3808822.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                                    </div>
+                                    <div class="col-7">
+                                        <h1 class="tertary-header">Mania Itali</h1>
+                                        <p class="primary-text mb-0 line-1 text-capitalize">california , USA</p>
+                                    </div>
+                                    <div class="col-2 d-flex align-items-end" style="height: 100px;">
+                                        <p class="primary-text text-end mb-2">3.7<i class="fa-solid fa-star ms-2" style="color: #dbd41f;"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-12">
+                                    <p class="primary-text light-color mb-5" data-aos="fade-up" data-aos-duration="600">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nobis quaerat exercitationem corporis repudiandae eos quia doloribus dolor. Hic corporis a vel voluptate deleniti esse aut, nostrum labore error ut.
+                                    </p>
+                                </div>
+                                <div class="card border-0 img-box-slider-card row flex-row align-items-center">
+                                    <div class="col-3">
+                                        <img src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                                    </div>
+                                    <div class="col-7">
+                                        <h1 class="tertary-header">juwan meg</h1>
+                                        <p class="primary-text mb-0 line-1 text-capitalize">california , USA</p>
+                                    </div>
+                                    <div class="col-2 d-flex align-items-end" style="height: 100px;">
+                                        <p class="primary-text text-end mb-2">1.7<i class="fa-solid fa-star ms-2" style="color: #dbd41f;"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-12">
+                                    <p class="primary-text light-color mb-5" data-aos="fade-up" data-aos-duration="600">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nobis quaerat exercitationem corporis repudiandae eos quia doloribus dolor. Hic corporis a vel voluptate deleniti esse aut, nostrum labore error ut.
+                                    </p>
+                                </div>
+                                <div class="card border-0 img-box-slider-card row flex-row align-items-center">
+                                    <div class="col-3">
+                                        <img src="https://images.pexels.com/photos/8067886/pexels-photo-8067886.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                                    </div>
+                                    <div class="col-7">
+                                        <h1 class="tertary-header">kationo kai</h1>
+                                        <p class="primary-text mb-0 line-1 text-capitalize">california , USA</p>
+                                    </div>
+                                    <div class="col-2 d-flex align-items-end" style="height: 100px;">
+                                        <p class="primary-text text-end mb-2">5.0<i class="fa-solid fa-star ms-2" style="color: #dbd41f;"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-12">
+                                    <p class="primary-text light-color mb-5" data-aos="fade-up" data-aos-duration="600">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nobis quaerat exercitationem corporis repudiandae eos quia doloribus dolor. Hic corporis a vel voluptate deleniti esse aut, nostrum labore error ut.
+                                    </p>
+                                </div>
+                                <div class="card border-0 img-box-slider-card row flex-row align-items-center">
+                                    <div class="col-3">
+                                        <img src="https://images.pexels.com/photos/12902932/pexels-photo-12902932.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                                    </div>
+                                    <div class="col-7">
+                                        <h1 class="tertary-header">Jhon Broack</h1>
+                                        <p class="primary-text mb-0 line-1">Miami , USA</p>
+                                    </div>
+                                    <div class="col-2 d-flex align-items-end" style="height: 100px;">
+                                        <p class="primary-text text-end mb-2">2.2<i class="fa-solid fa-star ms-2" style="color: #dbd41f;"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 d-flex justify-content-between px-md-2">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                <i class="fa-solid fa-arrow-left blue-color"></i>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                <i class="fa-solid fa-arrow-right blue-color"></i>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="mb-100">
+        <div class="container" style="overflow: inherit;">
+            <div class="row footer-above justify-content-center text-center px-2 py-5 px-md-5">
+                <div class="col-12">
+                    <h3 class="text-capitalize mb-3" data-aos="fade-up" data-aos-duration="600">Safeon Fire is one of the leading Fire Safety engineering consultants in Oman, specializing in different fire engineering and protection services in Oman. </h3>
+                    <p class="secondary-text light-color mb-3" data-aos="fade-up" data-aos-duration="700">We want to work with you, so contact us to see how we can help you.</p>
+                    <a href="contactus.html" class="primary-btn mx-auto mb-2" data-aos="fade-up" data-aos-duration="800">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer Starts Here -->
+
+    <footer class="bg-primary2">
+        <div class="container">
+            <div class="row g-5 justify-content-between">
+                <div class="col-12">
+                    <a class="navbar-brand m-0  p-0" href="index.html"><img src="assets/img/logo.png" class="site-logo" alt="logo" data-aos="fade-up" data-aos-duration="600"></a>
+                </div>
+                <div class="col-lg-4 text-start">
+                    <p class="primary-text color-white mb-0" data-aos="fade-up" data-aos-duration="600">
+                        Ahmed Said Engineering Consultancy (Safeon) is the professional global consultancy service provider of technical information & engineering services Including Fire Risk Assessment, Fire Management, Fire Engineering consultancy and HAZOP.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-end" data-aos="fade-up" data-aos-duration="600">
+                    <ul class="navbar-nav flex-column">
+                        <li class="nav-item text-end mx-auto">
+                            <a href="https://goo.gl/maps/QWKMDqNYR3PRLeGv5" class="nav-link primary-text mb-2 p-0 color-white">
+                                <span class="footer-icon">
+                                    <i class="fa-solid fa-location-dot me-2 light-color"></i>
+                                </span>Safeon Building No.:4657B, Way No:3767, Al Mazoun St, Al Khoud, Sultanate of Oman
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link primary-text mb-2 p-0 color-white" href="tel:+968 2455 3571">
+                                <span class="footer-icon">
+                                    <i class="fa-solid fa-phone-volume me-2 light-color"></i>
+                                </span> +968 2455 3571</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link primary-text mb-0 p-0 color-white" href="mailto: info@safeonfc.com ">
+                                <span class="footer-icon">
+                                    <i class="fa-solid fa-envelope me-2 light-color"></i>
+                                </span> info@safeonfc.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-bottom border-dark border-3 my-5" data-aos="fade-left" data-aos-duration="600"></div>
+            <div class="row g-5 justify-content-evenly">
+                <div class="col-12 d-flex justify-content-between">
+                    <ul class="nav col-xl-6 mx-auto justify-content-evenly justify-content-md-between">
+                        <li class="nav-item" data-aos="fade-up" data-aos-duration="500">
+                            <a href="index.html" class="nav-link mb-2 mb-md-0 py-0 text-uppercase color-white">Home</a>
+                        </li>
+                        <li class="nav-item" data-aos="fade-up" data-aos-duration="600">
+                            <a href="aboutus.html" class="nav-link py-0 text-uppercase color-white">about</a>
+                        </li>
+                        <li class="nav-item" data-aos="fade-up" data-aos-duration="700">
+                            <a href="services.html" class="nav-link py-0 text-uppercase color-white">services</a>
+                        </li>
+                        <li class="nav-item" data-aos="fade-up" data-aos-duration="800">
+                            <a href="engineering.html" class="nav-link py-0 text-uppercase color-white">Engineering</a>
+                        </li>
+                        <li class="nav-item" data-aos="fade-up" data-aos-duration="900">
+                            <a href="approach.html" class="nav-link py-0 text-uppercase color-white">approach</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 text-center">
+                    <div class="d-flex justify-content-center">
+                        <a class="nav-link primary-text mb-0 mx-1 color-white footer-link" target="_blank" href="https://www.linkedin.com/in/asecfire/"><i
+                                class="fa-brands fa-linkedin-in color-white"></i>
+                        </a>
+                        <a class="nav-link primary-text mb-0 mx-1 color-white footer-link" target="_blank" href="https://www.facebook.com/ASEC-1947396328821295/"><i
+                                class="fa-brands fa-facebook-f color-white"></i>
+                        </a>
+                        <a class="nav-link primary-text mb-0 mx-1 color-white footer-link" target="_blank" href="https://twitter.com/asec_fire"><i class="fa-brands fa-twitter color-white"></i>
+                        </a>
+                        <a class="nav-link primary-text mb-0 mx-1 color-white footer-link" target="_blank" href="https://plus.google.com/u/0/106652385634310929480"><i
+                                class="fa-brands fa-google-plus-g color-white"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <p class="primary-text light-color mb-0">Terms & Constions &nbsp; Privacy Policy </p>
+                    <p class="primary-text light-color mb-0">Copyright © 2023 - Safeon | All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+ <!-- footer Ends Here -->
+
+ <div id="canvascontent">
+</div>
+
+<!-- Bootstarp cdn -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
+
+<!-- jquery CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- owl carousel CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- scrolling animation cdn -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<!-- canvas script -->
+<script src="assets/script/offcanvascontent.js"></script>
+
+<script src="assets/script/slidercontent.js"></script>
+
+<!-- our script -->
+<script src="assets/script/script.js"></script>
+
+</body>
+
+</html>
